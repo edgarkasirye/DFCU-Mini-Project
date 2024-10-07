@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegisterNewStaff">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TemporaryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Surname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Othernames" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DOB" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="IDPhoto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterNewStaffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterNewStaffResult" type="tns:StaffCreationResposeObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StaffCreationResposeObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StaffId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetStaffDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StaffID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStaffDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStaffDetailsResult" type="tns:GetStaffDetailsResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetStaffDetailsResponseObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StaffList" type="tns:ArrayOfStaffObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStaffObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StaffObject" nillable="true" type="tns:StaffObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StaffObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StaffId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SurName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OtherNames" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DOB" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDPhoto" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateStaffDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StaffId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NewDOB" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="NewIDPhoto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateStaffDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateStaffDetailsResult" type="tns:ResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:LoginResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LoginResponseObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SessionDetails" type="tns:SessionObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SessionObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SessionId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionRole" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SessionStatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Logout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogoutResult" type="tns:ResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTemporaryIDs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="durationinseconds" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTemporaryIDsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateTemporaryIDsResult" type="tns:GetTemporaryIdsResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetTemporaryIdsResponseObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TemporaryIds" type="tns:ArrayOfTemporaryIdObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTemporaryIdObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TemporaryIdObject" nillable="true" type="tns:TemporaryIdObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TemporaryIdObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TemporaryId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Creationdate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Expirationdate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ViewTemporaryIDs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sessionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewTemporaryIDsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewTemporaryIDsResult" type="tns:GetTemporaryIdsResponseObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAPIStats">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAPIStatsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAPIStatsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegisterNewStaffSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterNewStaff" />
+  </wsdl:message>
+  <wsdl:message name="RegisterNewStaffSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterNewStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStaffDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetStaffDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStaffDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStaffDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStaffDetails" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStaffDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStaffDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTemporaryIDsSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTemporaryIDs" />
+  </wsdl:message>
+  <wsdl:message name="CreateTemporaryIDsSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTemporaryIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewTemporaryIDsSoapIn">
+    <wsdl:part name="parameters" element="tns:ViewTemporaryIDs" />
+  </wsdl:message>
+  <wsdl:message name="ViewTemporaryIDsSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewTemporaryIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAPIStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAPIStats" />
+  </wsdl:message>
+  <wsdl:message name="GetAPIStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAPIStatsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HRManagementAPISoap">
+    <wsdl:operation name="RegisterNewStaff">
+      <wsdl:input message="tns:RegisterNewStaffSoapIn" />
+      <wsdl:output message="tns:RegisterNewStaffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffDetails">
+      <wsdl:input message="tns:GetStaffDetailsSoapIn" />
+      <wsdl:output message="tns:GetStaffDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaffDetails">
+      <wsdl:input message="tns:UpdateStaffDetailsSoapIn" />
+      <wsdl:output message="tns:UpdateStaffDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTemporaryIDs">
+      <wsdl:input message="tns:CreateTemporaryIDsSoapIn" />
+      <wsdl:output message="tns:CreateTemporaryIDsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewTemporaryIDs">
+      <wsdl:input message="tns:ViewTemporaryIDsSoapIn" />
+      <wsdl:output message="tns:ViewTemporaryIDsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAPIStats">
+      <wsdl:input message="tns:GetAPIStatsSoapIn" />
+      <wsdl:output message="tns:GetAPIStatsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HRManagementAPISoap" type="tns:HRManagementAPISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterNewStaff">
+      <soap:operation soapAction="http://tempuri.org/RegisterNewStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffDetails">
+      <soap:operation soapAction="http://tempuri.org/GetStaffDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaffDetails">
+      <soap:operation soapAction="http://tempuri.org/UpdateStaffDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTemporaryIDs">
+      <soap:operation soapAction="http://tempuri.org/CreateTemporaryIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewTemporaryIDs">
+      <soap:operation soapAction="http://tempuri.org/ViewTemporaryIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAPIStats">
+      <soap:operation soapAction="http://tempuri.org/GetAPIStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HRManagementAPISoap12" type="tns:HRManagementAPISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterNewStaff">
+      <soap12:operation soapAction="http://tempuri.org/RegisterNewStaff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetStaffDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaffDetails">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStaffDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://tempuri.org/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTemporaryIDs">
+      <soap12:operation soapAction="http://tempuri.org/CreateTemporaryIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewTemporaryIDs">
+      <soap12:operation soapAction="http://tempuri.org/ViewTemporaryIDs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAPIStats">
+      <soap12:operation soapAction="http://tempuri.org/GetAPIStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HRManagementAPI">
+    <wsdl:port name="HRManagementAPISoap" binding="tns:HRManagementAPISoap">
+      <soap:address location="https://localhost:44357/HRManagementAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HRManagementAPISoap12" binding="tns:HRManagementAPISoap12">
+      <soap12:address location="https://localhost:44357/HRManagementAPI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

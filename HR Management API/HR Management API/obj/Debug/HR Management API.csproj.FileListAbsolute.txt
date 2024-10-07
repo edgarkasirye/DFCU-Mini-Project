@@ -1,0 +1,81 @@
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\HR Management API.dll.config
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\HR Management API.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\HR Management API.pdb
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csc.exe
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csc.exe.config
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csc.rsp
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csi.exe
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csi.exe.config
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\csi.rsp
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.AppContext.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Console.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.IO.Compression.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Net.Http.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Net.Sockets.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.ValueTuple.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Xml.XPath.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\vbc.exe
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\vbc.exe.config
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\vbc.rsp
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\VBCSCompiler.exe
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\obj\Debug\HR Management API.csproj.AssemblyReference.cache
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\obj\Debug\HR Management API.csproj.CoreCompileInputs.cache
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\obj\Debug\HR Management API.csproj.CopyComplete
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\obj\Debug\HR Management API.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\obj\Debug\HR Management API.pdb
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Buffers.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Memory.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Numerics.Vectors.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Text.Encodings.Web.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Text.Json.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.ValueTuple.dll
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Buffers.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Memory.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Numerics.Vectors.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Text.Encodings.Web.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Text.Json.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\EDGAR\Desktop\DFCU Mini Project\HR Management API\HR Management API\bin\System.ValueTuple.xml
